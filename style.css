@@ -24,7 +24,7 @@ html, body {
     background-color: var(--background); 
     height: 100%;
     scroll-snap-type: y mandatory;
-    scrollbar-width: smooth;
+    scroll-behavior: smooth;
     overflow-y: scroll;
 }
 
@@ -69,7 +69,6 @@ html, body {
 
 #nickname { 
     font-size: 1.125rem; 
-    justify-content: flex-end;
     color: var(--subhead);
 }
 
@@ -95,7 +94,8 @@ html, body {
 }
 
 .button-link:hover {
-    background-color: var(--block);
+    cursor: pointer;
+    transform: scale(0.9);
 }
 
 #links {
